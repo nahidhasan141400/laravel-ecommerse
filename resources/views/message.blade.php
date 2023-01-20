@@ -1,0 +1,49 @@
+@if(Session::has('success'))
+<script>
+    $( document ).ready(function() {
+     {
+        var successMessage="<?php echo Session::get('success'); ?>";
+        toastr.success(successMessage,"Message",
+         {
+             timeOut:5e3,
+             closeButton:!0,
+             debug:!1,
+             newestOnTop:!0,
+             progressBar:!0,
+             positionClass:"toast-top-right",
+             preventDuplicates:!0,
+             onclick:null,
+             showDuration:"300",
+             hideDuration:"1000",
+             extendedTimeOut:"1000",
+             showEasing:"swing",
+             hideEasing:"linear",
+             showMethod:"fadeIn",
+             hideMethod:"fadeOut",
+             tapToDismiss:!1})}})
+</script>
+@elseIf(Session::has('error'))
+<script>
+    $( document ).ready(function() {
+     {
+        var successMessage="<?php echo Session::get('error'); ?>";
+        toastr.error(successMessage,"Message",
+         {
+             timeOut:5e3,
+             closeButton:!0,
+             debug:!1,
+             newestOnTop:!0,
+             progressBar:!0,
+             positionClass:"toast-top-right",
+             preventDuplicates:!0,
+             onclick:null,
+             showDuration:"300",
+             hideDuration:"1000",
+             extendedTimeOut:"1000",
+             showEasing:"swing",
+             hideEasing:"linear",
+             showMethod:"fadeIn",
+             hideMethod:"fadeOut",
+             tapToDismiss:!1})}})
+</script>
+@endif

@@ -1,0 +1,49 @@
+@media screen and (min-width: 0px) and (max-width: 768px){
+	body{
+		max-width: 100%;
+	}
+	.menu{
+		visibility:visible;
+	}
+	nav .left{
+		display: none;
+	}
+	.show{
+		margin-top:50px;
+	}
+	.show li:nth-child(1)
+	{
+		padding-top: 40px !important;
+	}
+	.show li{
+		float: none;
+		margin-top: 0px !important;
+    	padding: 0px 0px 3px 0px !important;
+	}
+	.collection .colum-100,
+	.collection .colum-50,
+	.collection_2 .colum-100,
+	.collection_2 .colum-50,
+	.collection_3 .colum-100,
+	.collection_3 .colum-50,
+	.collection_4 .colum-100,
+	.collection_4 .colum-50,
+	.blog .colum-100,
+	.blog .colum-50,
+	.blog .colum-25,
+	.footer .colum-100,
+	.footer .colum-80,
+	.footer .colum-50,
+	.footer .colum-20,
+	.collection_radius .colum-100,
+	.collection_radius .colum-50,
+	.collection_radius .colum-33
+	{
+		float: none;
+		width: 100%;
+	}
+
+	
+	
+
+}
